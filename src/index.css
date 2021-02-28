@@ -1,13 +1,74 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+} 
+/* contenedor luces */
+#box {
+  background-color: black;
+  margin: auto;
+  width: 100px;
+  height: 200px;
+  flex-direction: column;
+  display: flex;
+  border-radius: 10px;
+}
+#post {
+  background-color: black;
+  margin: auto;
+  width: 20px;
+  height: 100px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*
+  colores de las lights
+*/
+.red-light {
+  background-color: red;
+  border-radius: 50%;
+  width: 80px;
+  height:80px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.yellow-light {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 80px;
+  height:80px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.green-light {
+  background-color: green;
+  border-radius: 50%;
+  width:80px;
+  height:80px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* shadows colors */
+.red-light-shadow {
+  box-shadow: 0 0 6em #ff3333;
+}
+.yellow-light-shadow{
+  box-shadow: 0 0 6em #ffff33;
+}
+.green-light-shadow{
+  box-shadow: 0 0 6em #33ff33;
+}
+
+
+#root {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  margin-left: -60px;
+  margin-top: -160px;
+  background-color: rgb(39, 38, 38);
+  width: 120px;
+  height: 320px;
+  border-radius: 30px;
 }
