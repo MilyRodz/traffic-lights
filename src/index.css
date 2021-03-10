@@ -1,25 +1,9 @@
 body {
   margin: 0;
 } 
-/* contenedor luces */
-#box {
-  background-color: black;
-  margin: auto;
-  width: 100px;
-  height: 200px;
-  flex-direction: column;
-  display: flex;
-  border-radius: 10px;
-}
-#post {
-  background-color: black;
-  margin: auto;
-  width: 20px;
-  height: 100px;
-}
 
 /*
-  colores de las lights
+  light colors
 */
 .red-light {
   background-color: red;
@@ -28,6 +12,7 @@ body {
   height:80px;
   margin: auto;
   margin-top: 20px;
+  background-image: radial-gradient(rgb(224, 143, 143), transparent);
 }
 
 .yellow-light {
@@ -37,6 +22,7 @@ body {
   height:80px;
   margin: auto;
   margin-top: 20px;
+  background-image: radial-gradient(rgb(238, 233, 165), transparent);
 }
 
 .green-light {
@@ -46,6 +32,7 @@ body {
   height:80px;
   margin: auto;
   margin-top: 20px;
+  background-image: radial-gradient(lime, transparent);
 }
 
 /* shadows colors */
@@ -60,7 +47,14 @@ body {
 }
 
 
-#root {
+#post {
+  background-color: rgb(39, 38, 38);
+  margin: auto;
+  width: 20px;
+  height: 300px;
+}
+
+#container {
   position: absolute;
   display: block;
   left: 50%;
