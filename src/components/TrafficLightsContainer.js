@@ -23,27 +23,33 @@ const [light, setlights] = useState({
  
     return (
         <Fragment>
-            <TrafficLights 
-                lightState={light.redState} 
-                lightColor={lightColors.redlight} 
-                setlights={setlights} 
-                classShadow={lightShadow.redlightShadow}
-                typeLight={'red'} 
-            />
-            <TrafficLights 
-                lightState={light.yellowState} 
-                lightColor={lightColors.yellowLight} 
-                setlights={setlights} 
-                classShadow={lightShadow.yellowLightShadow} 
-                typeLight={'yellow'} 
-                />
-            <TrafficLights 
-                lightState={light.greenState} 
-                lightColor={lightColors.greenLight} 
-                setlights={setlights} 
-                classShadow={lightShadow.greenLightShadow}         
-                typeLight={'green'}         
-            />
+            <div id="lights-container">
+                <div id="post">
+                </div>
+                <div id="container">
+                    <TrafficLights 
+                        lightState={light.redState} 
+                        lightColor={lightColors.redlight} 
+                        setlights={setlights} 
+                        classShadow={lightShadow.redlightShadow}
+                        typeLight={'red'} 
+                    />
+                    <TrafficLights 
+                        lightState={light.yellowState} 
+                        lightColor={lightColors.yellowLight} 
+                        setlights={setlights} 
+                        classShadow={lightShadow.yellowLightShadow} 
+                        typeLight={'yellow'} 
+                        />
+                    <TrafficLights 
+                        lightState={light.greenState} 
+                        lightColor={lightColors.greenLight} 
+                        setlights={setlights} 
+                        classShadow={lightShadow.greenLightShadow}         
+                        typeLight={'green'}         
+                    />
+                </div>
+            </div>
         </Fragment>
     ) 
     
